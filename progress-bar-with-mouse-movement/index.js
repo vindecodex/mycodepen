@@ -6,7 +6,8 @@ let sp = document.querySelector("span")
 
 rating.addEventListener('mousemove',function(e){
   // mousemove e contains x and y of the mouse from the element
-  let val = e.pageX - ratingRect.left //subtract it with element postion left/x to avoid mouse gap
+  let val = ((e.pageX / rating.offsetWidth) * 100) - ratingRect.left
+  // updated val formula to allow using different width
   val = val > 100 ? 100 : val // must not be more than 100
   val = val < 20 ? 20 : val // must not be less than 20
   rate.style.width = val + "%"
