@@ -1,0 +1,16 @@
+.rating {
+  position:relative;
+  width: 100px;
+  height: 10px;
+  border: 1px solid #000;
+  background: #ececec;
+}
+.rate{
+  position: absolute;
+  max-width: 100%; /* set max width to avoid overflow */
+  min-width: 10%; /* set min width to avoid overflow */
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: green;
+}
