@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  height: 700px;
+  width: 80%;
+  margin: 0 auto;
+  animation: rotate 10s linear 0s infinite;
+}
+
+.box {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #ececec;
+  border-radius: 25px;
+  position: absolute;
+  animation: rotate 10s linear 0s infinite;
+  animation-direction: reverse;
+  box-shadow: inset 2px 1px 5px #000;
+}
+
+.box:hover h1, .box:hover p{
+  text-shadow: 0px 0px 4px white;
+  color: yellow;
+}
+
+.box:hover {
+  background: #1a1a1a;
+  box-shadow: inset 2px 1px 5px yellow;
+  cursor: pointer;
+}
+
+.box:first-child {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.box:nth-child(2) {
+  top: 50%;
+  left: 0;
+  transform: translate(0,-50%);
+}
+
+.box:nth-child(3) {
+  top: 50%;
+  right: 0;
+  transform: translate(0,-50%);
+}
+
+.box:last-child {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
