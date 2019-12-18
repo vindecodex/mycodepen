@@ -1,0 +1,32 @@
+/* Utilities */
+.box {
+  width: 50px;
+  height: 50px;
+  border: 3px solid red;
+}
+.clear-fix {
+  clear: both;
+/*   use clear fix after using floats */
+}
+.parent {
+  text-align: right; /* used in inline-block */
+  position: relative; /* used in position relative absolute */
+}
+
+/* Using Margin */
+.right-margin {
+  margin-left: auto;
+}
+/* Using Float */
+.right-float {
+  float: right;
+}
+/* Using inline-block */
+.right-inline-block {
+  display: inline-block;
+}
+/* Using position absolute and relative */
+.right-position {
+  position: absolute;
+  right: 0;
+}
