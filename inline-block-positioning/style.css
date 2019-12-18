@@ -1,0 +1,23 @@
+.box {
+  display: inline-block;
+  width: 30%;
+  height: 50px;
+  background: red;
+}
+.parent {
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+.justify:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+}
