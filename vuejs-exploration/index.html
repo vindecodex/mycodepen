@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./main.js"></script>
+</head>
+<body>
+  <div id="app">
+    
+<!--     calling a data -->
+    <h1>{{ name }}</h1>
+    
+<!--     calling a function -->
+    <p>{{ sayhi() }}</p>
+    
+<!--     binding attributes use v-bind or in short : -->
+    <a v-bind:href="link">google.com</a><br><br>
+    
+<!--     v-on:event in short @event -->
+    <button v-on:click="changename"> change name to vindecode</button><br><br>
+    
+<!--     with event modifiers -->
+    <button v-on:click.once="increment">{{ number }}</button>
+<!--     without event modifiers -->
+    <button v-on:click="increment">{{ number }}</button><br><br>
+    
+<!--     two way data binding -->
+    <input type="text" v-model="name"><label for="">{{ name }}</label>
+    
+    <hr>
+<!--     computed properties -->
+    <h1>Computed Properties</h1>
+    <button v-on:click="a++">{{ a }}</button>
+    <button v-on:click="b++">{{ b }}</button>
+    
+    using methods only
+    <p>a value: {{ getA() }}</p>
+    <p>b value: {{ getB() }}</p>
+    
+    <br>
+    using computed
+    <p>a value: {{ computedA }}</p>
+    <p>b value: {{ computedB }}</p>
+    
+    <p>Check console.log and press the buttons and look who is running always, you will see that computed methods is much more effecient</p>
+    <hr>
+    <br>
+    
+  </div>
+</body>
+</html>
