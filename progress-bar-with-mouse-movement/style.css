@@ -1,14 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .rating {
   position:relative;
   width: 100px;
   height: 10px;
   border: 1px solid #000;
   background: #ececec;
+  box-sizing: border-box;
 }
 .rate{
   position: absolute;
@@ -18,4 +14,5 @@
   height: 100%;
   display: block;
   background: green;
+  box-sizing: border-box;
 }
