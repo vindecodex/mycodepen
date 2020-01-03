@@ -1,0 +1,17 @@
+#rating_star {
+  cursor: pointer;
+  color: #ececec;
+  display: inline-block;
+}
+
+#rating_star .active {
+  color: yellow;
+}
+
+#rating_star i {
+  text-shadow: 1px 1px 1px #000;
+}
+
+#rating_star .rateVal {
+  color: #000;
+}
