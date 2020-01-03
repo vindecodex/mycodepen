@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div id="rating_star" v-bind:rate="rating">
+        <span v-on:click="setRating(1)"><i v-bind:class="ratingClass(1)"></i></span>
+        <span v-on:click="setRating(2)"><i v-bind:class="ratingClass(2)"></i></span>
+        <span v-on:click="setRating(3)"><i v-bind:class="ratingClass(3)"></i></span>
+        <span v-on:click="setRating(4)"><i v-bind:class="ratingClass(4)"></i></span>
+        <span v-on:click="setRating(5)"><i v-bind:class="ratingClass(5)"></i></span>
+        <span class="rateVal">{{ rating }}</span>
+    </div>
+</body>
+</html>
