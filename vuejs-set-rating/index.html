@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- load data-main="./dist/main.js" after require.js was loaded -->
+    <!-- we use require.js because require keyword only runs on nodejs -->
+    <script data-main="./dist/main" src="./src/require.js"></script>
 </head>
 <body>
     <div id="rating_star" v-bind:rate="rating">

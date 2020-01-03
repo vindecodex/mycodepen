@@ -6,3 +6,4 @@
 5. [Layout Centering](https://github.com/vindecodex/mycodepen/tree/master/layout-centering)
 6. [VueJs Exploration](https://github.com/vindecodex/mycodepen/tree/master/vuejs-exploration)
 7. [VueJs Dynamic Css Styling](https://github.com/vindecodex/mycodepen/tree/master/vuejs-dynamic-css-styling)
+8. [VueJs Set Rating](https://github.com/vindecodex/mycodepen/tree/master/vuejs-set-rating)
